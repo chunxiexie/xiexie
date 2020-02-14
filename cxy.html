@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>蟹小弟给ju老大</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/ddfullscreenslider.js"></script>
+</head>
+<body>
+
+<div id="music">
+	<audio id="myAudio" autoplay="autoplay">
+		<source src="music/m.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio src=""controls" autoplay hidden="true" style="display:none;"/>
+</div>
+
+<div class="fixtop">
+</div>
+<div class="fixtoptext">
+	<div class="logo">
+		<font href="aa.jpg" style="color:pink;";>傻juju</font>
+  </div>
+	<div class="menu">
+		<a href="x/96B541A0ADCBF358FAC625EE711953F5.jpg">5</a> <a href="y/xx.jpg">2</a> <a href="aa.png">0</a>
+	</div>
+	<div class="musicblock">
+
+	</div>
+</div>
+<section id="youtiy" class="dd_fullscreenslider">
+
+	<div class="slidewrapper">
+		<article class="slide"><img src="cxy.jpg" width="1600" height="800" alt=""/>
+			<div class="slide1_content">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">c</div>
+				<div class="cut"></div>
+				<div class="lovesay"  style="letter-spacing:2px">
+					<div>
+					<font class="fontsytle">8月31</font>那是我们第一次见面，作为村服榜首小乔的我再一次带飞了队友，之后我们也算成为了游戏好友，许多事又这么巧合，除了游戏以外我们竟然还有这么多相似的地方。
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide"><img src="cxy.jpg" width="1600" height="800" alt=""/>
+			<div class="slide1_content" style="background:gray;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">x</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="writing-mode:tb-rl;font-size:1.1em;margin-top:-30px;letter-spacing:5px">
+					<div>
+					<p> 与你共享宁静</P>
+					<p>而我更想</P>
+					<p>这世界车水马龙</P>
+					<p>寻栗子于林中</P>
+					<p>从合肥到金寨</p>
+					<p><font class="fontsytle">十月二十</font></p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide"><img src="cxy.jpg" width="1600" height="800" alt=""/>
+			<div class="slide1_content" style="background:#F0F0F0;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">y</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="font-size:.8em;margin-top:10px;letter-spacing:5px">
+					<div>
+					<p><font class="fontsytle">11月25</font>我们以火锅纪念合肥的初雪，对于一个四川人，火锅不仅是一种美食更代表一种意义那个陪你吃火锅的人千千万万，想带你吃火锅的人只有一个。</P>
+					
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide"><img src="cxy.jpg" width="1600" height="800" alt=""/>
+			<div class="slide1_content" style="background:#C6E2FF;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">i</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="writing-mode:lr-tb;font-size:1.1em;margin-top:-30px;letter-spacing:5px">
+					<div>
+					<p><font class="fontsytle">十二月七</font></P>
+					<p>你终于属于我</P>
+					<p></P>
+					<p><font class="fontsytle"></font> </P>
+					<p></p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide"><img src="cxy.jpg" width="1600" height="800" alt=""/>
+			<div class="slide1_content" style="background:#B9D3EE;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">u</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="font-size:1em;margin-top:-10px;letter-spacing:5px">
+					<div>
+					<font class="fontsytle">以</font>后的路很长，不管遇到什么困难，希望我们都能继续走下去。我们还要一起种胡杨，华山松，还要一起体验各种各样的生活。最后情人节快乐哦！！
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>
+
+<script>
+
+
+var fss;
+$(function() {
+	fss = new ddfullscreenslider({
+		sliderid: 'youtiy'
+	});
+	
+	var aa = $(".slide1_content").innerHeight();
+    $(".slide1_content").css('width',aa);
+	$(".slide1_content_text").css('width',aa);
+});
+</script>
+
+
+<script>
+	$(document).ready(function() {	
+		$(".xwcms").removeClass("animation");
+		$(".xwcms").on("click", function() {
+			$(".xwcms").addClass("animation");
+			$(this).toggleClass("pause");
+			var audio = $("#music audio")[0];
+			if (audio.paused) {
+				$(".xwcms").addClass("animation");
+				audio.play();
+			} else {
+				$(".xwcms").removeClass("animation");
+				audio.pause();
+			}
+			audio.addEventListener('ended', function () {  
+				$(".xwcms").removeClass("animation");
+			}, false);
+		});
+	});
+	
+
+</script>
+
+</body>
+</html>
